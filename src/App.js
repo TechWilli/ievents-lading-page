@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import 'animate.css';
+import LargeSection from './components/large-section/LargeSection';
+import BusinessPurpose from './pages/business-purpose/BusinessPurpose';
+import AboutApp from './pages/about-app/AboutApp';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LargeSection backgroundColor="#F7F7F7">
+        <BusinessPurpose />
+      </LargeSection>
+      <LargeSection backgroundColor="white">
+
+      </LargeSection>
+      <LargeSection backgroundColor="#F7F7F7">
+
+      </LargeSection>
+
+      <Footer />
     </div>
   );
 }
