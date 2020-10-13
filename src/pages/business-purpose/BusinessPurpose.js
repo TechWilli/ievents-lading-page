@@ -55,7 +55,7 @@ const CardText = styled.span`
 `
 
 const CardTitle = styled.span`
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #63EC85;
   font-weight: bold;
   display: block;
@@ -74,28 +74,27 @@ const BusinessPurpose = () => {
     <ContentWrapper>
       <Container>
         <TitleContainer>
-          {/* <Title>"Tudo na palma da mão para dar aquele festão!"</Title> */}
           <img src={IEventsLogo} alt="logo ievents" width="550"/>
         </TitleContainer>
 
         <VerticalDivider />
 
         <CardContainer>
-          <Card>
+          <Card shadowColor={'#63EC85'} width={'500'} height={'130'}>
             <CardTitle>Missão</CardTitle>
             <CardText>
               Nossa missão é ajudar pessoas a realizar organização de eventos, festas e diversas outras formas de confraternização por meio da tecnologia
             </CardText>
           </Card>
 
-          <Card>
+          <Card shadowColor={'#63EC85'} width={'500'} height={'130'}>
             <CardTitle>Visão</CardTitle>
             <CardText>
               Unificar os mais variados tipos de eventos em um único aplicativo de busca e gestão para nossos usuários, sendo uma plataforma de relevância no mercado
            </CardText>
           </Card>
 
-          <Card>
+          <Card shadowColor={'#63EC85'} width={'500'} height={'130'}>
             <CardTitle>Valores</CardTitle>
             <CardText>
               Eficiência, Performance, Foco no cliente, Flexibilidade, Resultado

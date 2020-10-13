@@ -61,9 +61,9 @@ const Footer = () => {
       <GroupContainer>
         <div>
           <Title>Grupo</Title>
-          {group.map(member => {
+          {group.map((member, index) => {
             return (
-              <Text>{member}</Text>
+              <Text key={index}>{member}</Text>
             );
           })}
         </div>

@@ -12,9 +12,11 @@ function App() {
       <LargeSection backgroundColor="#F7F7F7">
         <BusinessPurpose />
       </LargeSection>
-      <LargeSection backgroundColor="white">
 
+      <LargeSection backgroundColor="white">
+        <AboutApp />
       </LargeSection>
+
       <LargeSection backgroundColor="#F7F7F7">
 
       </LargeSection>
