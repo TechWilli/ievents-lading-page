@@ -15,10 +15,6 @@ const CardContainer = styled.div`
   }
 `
 
-
-// #9D66D5
-// #DD5890
-
 const Card = ({ children, ...props }) => {
   return (
     <CardContainer

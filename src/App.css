@@ -1,3 +1,9 @@
+:root {
+  --green-app-color: #63EC85;
+  --purple-app-color: #9D66D5;
+  --pink-app-color: #DD5890;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -60,7 +60,7 @@ const TextWrapper = styled.div`
 
 const Highlighter = styled.span`
   font-size: 1.5rem;
-  color: #DD5890;
+  color: var(--pink-app-color);
   font-weight: bold;
 `
 

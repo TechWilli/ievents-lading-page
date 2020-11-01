@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import MarketplaceLogos from '../../assets/images/app-store-google-play-logo.png';
 
 const FooterContainer = styled.footer`
   background-color: #333333;
@@ -22,6 +23,7 @@ const MadeByConainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
@@ -52,15 +54,15 @@ const Text = styled.span`
   line-height: 1.5rem;
 `
 
-const Footer = () => {
+const Footer = (props) => {
 
   const group = ['Anderson dos Santos Galvão', 'José Lino de Brito Júnior', 'João Ricardo dos Santos', 'Matheus Fernandes Gonçalves', 'Wagner de Sousa', 'William Araujo de Assis'];
 
   return (
-    <FooterContainer>
+    <FooterContainer id={props.id}>
       <GroupContainer>
         <div>
-          <Title>Grupo</Title>
+          <Title>Idealizadores</Title>
           {group.map((member, index) => {
             return (
               <Text key={index}>{member}</Text>
@@ -70,7 +72,9 @@ const Footer = () => {
       </GroupContainer>
 
       <MadeByConainer>
-        <Text>Feito com <span role="img" aria-label="coração">💚</span> por William Araujo</Text>
+        <Text>Feito com <span role="img" aria-label="coração">💚</span> por iEvents!</Text>
+        <br />
+        <img src={MarketplaceLogos} alt="logo play store e app store" height="100"/>
       </MadeByConainer>
 
       <ContactContainer>

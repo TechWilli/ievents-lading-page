@@ -9,7 +9,7 @@ const Section = styled.section`
 
 const LargeSection = ({ children, ...props }) => {
   return (
-    <Section backgroundColor={props.backgroundColor}>
+    <Section id={props.id} backgroundColor={props.backgroundColor}>
       {children}
     </Section>
   )

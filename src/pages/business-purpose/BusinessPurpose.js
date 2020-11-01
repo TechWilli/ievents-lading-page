@@ -44,7 +44,7 @@ const CardContainer = styled.div`
 
 const Title = styled.span`
   font-size: 2.5rem;
-  color: #63EC85;
+  color: var(--green-app-color);
   font-weight: bold;
   margin: 2rem;
   text-align: center;
@@ -56,7 +56,7 @@ const CardText = styled.span`
 
 const CardTitle = styled.span`
   font-size: 1.3rem;
-  color: #63EC85;
+  color: var(--green-app-color);
   font-weight: bold;
   display: block;
 
@@ -64,7 +64,7 @@ const CardTitle = styled.span`
     content: '';
     width: 100px;
     display: block;
-    border-bottom: 5px solid #63EC85;
+    border-bottom: 5px solid var(--green-app-color);
     margin: 8px 0;
   }
 `
