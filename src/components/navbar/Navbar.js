@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const NavContainer = styled.nav`
@@ -83,12 +83,12 @@ const Navbar = () => {
       {<NavContainer>
         <div style={{ fontSize: '1.5rem' }}>
           iEvents!
-      </div>
+        </div>
         <Menu>
-          {menuItemsList.map((item, index) => {
+          {menuItemsList.map(({ name, href }, index) => {
             return (
-              <MenuItems href={item.href} key={index}>
-                <div>{item.name}</div>
+              <MenuItems href={href} key={index}>
+                <div>{name}</div>
                 <ItemFocus />
               </MenuItems>
             )

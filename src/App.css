@@ -31,12 +31,10 @@ input {
 }
 
 ::-webkit-scrollbar-track {
-
   background-color: rgb(220, 220, 220);
 }
 
 ::-webkit-scrollbar-thumb {
-  
   border-radius: .35rem;
   background-color: grey;
 }
